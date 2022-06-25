@@ -11,6 +11,7 @@
 
     <modules>
         <module>annotation-config</module>
+        <module>spring-qualifier</module>
     </modules>
 
     <properties>
@@ -27,6 +28,8 @@
         <junit-jupiter.version>5.5.2</junit-jupiter.version>
         <assertj-core.version>3.16.1</assertj-core.version>
         <logback-classic.version>1.2.3</logback-classic.version>
+        <spring.version>5.2.7.RELEASE</spring.version>
+        <hibernate.version>5.6.7.Final</hibernate.version>
     </properties>
 
     <build>

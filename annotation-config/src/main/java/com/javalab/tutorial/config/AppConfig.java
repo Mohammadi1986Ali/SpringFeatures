@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = {"com.javalab.tutorial"})
 public class AppConfig {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(AppConfig.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AppConfig.class);
 
     @Bean
     public Customer getCustomer() {

@@ -8,7 +8,7 @@ import javax.annotation.PreDestroy;
 
 public class Customer {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(Customer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Customer.class);
 
     private Long id;
     private String name;

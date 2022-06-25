@@ -8,4 +8,3 @@ Since Java EE was deprecated in Java 9, and removed in Java 11, we have to add a
         <artifactId>javax.annotation-api</artifactId>
         <version>1.3.2</version>
     </dependency>
-

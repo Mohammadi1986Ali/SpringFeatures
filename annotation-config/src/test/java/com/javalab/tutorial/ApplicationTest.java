@@ -13,7 +13,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 class ApplicationTest {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(ApplicationTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationTest.class);
     static ConfigurableApplicationContext context;
 
     @BeforeAll
@@ -26,6 +26,7 @@ class ApplicationTest {
 
     @Test
     public void whenCustomerObjectCreatedBySpringContext_thenCustomerObjectMustBeCreatedCorrectly() {
+        LOGGER.info("ApplicationTest#whenCustomerObjectCreatedBySpringContext_thenCustomerObjectMustBeCreatedCorrectly");
         Customer customer = context.getBean("getCustomer", Customer.class);
         Assertions.assertThat(customer).isNotNull();
         Assertions.assertThat(customer.getId()).isEqualTo(7);
